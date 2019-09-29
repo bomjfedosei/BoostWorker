@@ -2,14 +2,28 @@
     position: relative;
 }
 
-.profile h2{
+.profile h2 {
     position: absolute;
-    width: 320px;
-    top: 15px;
-    left: 164px;
+    width: 420px;
+    top:0px;
+    left: 104px;
 }
 
-.profile p{
+.new_pro {
+  position: absolute;
+  width: 420px;
+  top: 50px;
+  left: 230px;
+}
+
+.old_pro{
+    position: absolute;
+    width: 420px;
+    top: 50px;
+    left: 128px;
+}
+
+.profile p {
     position: absolute;
     top: 80px;
     left: 190px;
