@@ -1,0 +1,78 @@
+
+    <!--qualification start-->
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <a href="/hr?login=bomjfedosei"><img src="/static/img/Vector.png" alt="vector"></a>
+            <h4 class="pl-4">К списку сотрудников</h4>
+        </div>
+
+        <div class="row">
+            <div class="profile">
+                <img src="/static/img/{{Avatar}}" alt="">
+                <h2 class="pl-4">{{Human}}</h2>
+                <img class="mark" src="" alt="" width="12px" height="12px">
+                <span class="old_pro">{{Positon}}</span> <span class="new_pro"> Сотрудник отдела качества</span>
+                <button class="btn_main mt-5">Личная информация</button>
+            </div>
+        </div>
+
+
+        <div class="row mt-5 pt-3">
+            <div class="col-sm-12">
+                <h3>Процесс переквалификации:</h3><br>
+            </div>
+            <div class="col-sm-3">
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: {{ progressbar }}%;" aria-valuenow="{{ progressbar }}" aria-valuemin="0" aria-valuemax="100">{{ progressbar }}%</div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row mt-5 pt-5">
+                    <div class="col-sm-6 old">
+                        <span class="professional">{{ Prof1 }}</span>
+                        <br><br>
+                        <h3>Обязательные Навыки:</h3>
+                        {% for item in Prof1_Needed_Skills %}
+                        {{item}}<br>
+                        {% endfor %}
+                        <h3>Рекомендуемые Навыки:</h3>
+                        {% for item in Prof1_Recomended_Skills %}
+                        {{item}}<br>
+                        {% endfor %}
+                    </div>
+
+
+                    <div class="col-sm-6 new">
+                        <span class="professional">{{ Prof2 }}</span>
+                        <br><br>
+                        <h3>Обязательные Навыки:</h3>
+                        {% for item in Prof2_Needed_Skills %}
+                        {{item}}<br>
+                        {% endfor %}
+                        <h3>Рекомендуемые Навыки:</h3>
+                        {% for item in Prof2_Recomended_Skills %}
+                        {{item}}<br>
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row mt-5 pt-5">
+                    <h3>Обучение:</h3>
+
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4"></div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>

@@ -1,0 +1,55 @@
+ <!--module start-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="alert alert-dismissible fade show" role="alert">
+                    <div class="container">
+                        <div class="row">
+
+                            <h3 class="col-sm-12">Сотрудников попали в красную зону по результатам июля: {{ count }} </h3>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                      {% for worker in workers_red%}
+                    <a href = "/workers/{{worker.id}}?login=bomjfedosei">  <div class="usercard col-sm-4">
+                          <img src="/static/img/{{worker.Avatar}}" alt="">
+                          <h4>{{worker.Person}}</h4>
+                          <p>{{worker.Position}}</p>
+                      </div></a>
+                      {% endfor %}
+                     <!--Usercard-->
+
+</div>
+
+
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!--Retraining-->
+    <section>
+        <div class="container retraining">
+            <div class="row">
+                <h3>На переквалификации:</h3>
+            </div>
+            <div class="row">
+                    {% for worker in workers_wor %}
+                   <!--Usercard-->
+                  <a href = "/workers/{{worker.id}}?login=bomjfedosei">  <div class="usercard_default col-sm-4">
+                        <img src="/static/img/{{worker.Avatar}}" alt="">
+                        <h4>{{worker.Person}}</h4>
+                        <p>{{worker.Position}}</p>
+                    </div></a>
+                    {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!--module html end-->

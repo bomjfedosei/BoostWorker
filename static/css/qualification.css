@@ -1,0 +1,94 @@
+.profile {
+    position: relative;
+}
+
+.profile h2 {
+    position: absolute;
+    width: 300px;
+    top: 15px;
+    left: 164px;
+}
+
+.profile span {
+    position: absolute;
+    top: 80px;
+    left: 190px;
+}
+
+.profile .mark {
+    position: absolute;
+    top: 40px;
+    left: 430px;
+}
+
+.profile .old_pro {
+    position: absolute;
+    top: 78px;
+    left: 190px;
+}
+
+.profile .old_pro:after {
+    content: ">";
+    padding-left: 10px;
+}
+
+.profile .new_pro {
+    position: absolute;
+    top: 78px;
+    left: 320px;
+    width: 400px;
+
+}
+
+
+.profile .btn_main {
+    position: absolute;
+    top: 80px;
+    left: 186px;
+}
+
+span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #000000;
+
+    opacity: 0.5;
+}
+
+
+.old {
+    background: #EBF3FA;
+    border-radius: 5px;
+}
+
+.new {
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.professional {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    text-align: center;
+
+    color: #000000;
+
+    opacity: 0.5;
+}
